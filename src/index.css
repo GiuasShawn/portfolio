@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-mono antialiased;
+    background-color: #131313;
+    color: #e5e2e1;
+  }
+}
+
+@layer utilities {
+  .step-indent-1 {
+    @apply ml-4 md:ml-[32px];
+  }
+  .step-indent-2 {
+    @apply ml-8 md:ml-[64px];
+  }
+  .step-indent-3 {
+    @apply ml-12 md:ml-[96px];
+  }
+}

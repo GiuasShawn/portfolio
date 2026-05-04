@@ -1,0 +1,72 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'surface': '#131313',
+        'surface-dim': '#131313',
+        'surface-bright': '#393939',
+        'surface-container-lowest': '#0e0e0e',
+        'surface-container-low': '#1c1b1b',
+        'surface-container': '#201f1f',
+        'surface-container-high': '#2a2a2a',
+        'surface-container-highest': '#353534',
+        'on-surface': '#e5e2e1',
+        'on-surface-variant': '#b9ccb2',
+        'inverse-surface': '#e5e2e1',
+        'inverse-on-surface': '#313030',
+        'outline': '#84967e',
+        'outline-variant': '#3b4b37',
+        'surface-tint': '#00e639',
+        'primary': '#ebffe2',
+        'on-primary': '#003907',
+        'primary-container': '#00ff41',
+        'on-primary-container': '#007117',
+        'inverse-primary': '#006e16',
+        'secondary': '#ffd393',
+        'on-secondary': '#432c00',
+        'secondary-container': '#fdaf00',
+        'on-secondary-container': '#694600',
+        'tertiary': '#f7f9ff',
+        'on-tertiary': '#003352',
+        'tertiary-container': '#c2e0ff',
+        'on-tertiary-container': '#07669c',
+        'error': '#ffb4ab',
+        'on-error': '#690005',
+        'error-container': '#93000a',
+        'on-error-container': '#ffdad6',
+        'primary-fixed': '#72ff70',
+        'primary-fixed-dim': '#00e639',
+        'on-primary-fixed': '#002203',
+        'on-primary-fixed-variant': '#00530e',
+        'secondary-fixed': '#ffddaf',
+        'secondary-fixed-dim': '#ffba43',
+        'on-secondary-fixed': '#281800',
+        'on-secondary-fixed-variant': '#614000',
+        'tertiary-fixed': '#cde5ff',
+        'tertiary-fixed-dim': '#95ccff',
+        'on-tertiary-fixed': '#001d32',
+        'on-tertiary-fixed-variant': '#004a75',
+        'background': '#131313',
+        'on-background': '#e5e2e1',
+        'surface-variant': '#353534'
+      },
+      fontFamily: {
+        mono: ['"JetBrains Mono"', 'monospace'],
+        sans: ['"JetBrains Mono"', 'monospace'], // forcing everything to monospaced
+      },
+      spacing: {
+        'unit': '4px',
+        'indent-lg': '32px',
+        'gutter': '24px',
+        'margin-page': '48px',
+        'container-max': '1100px'
+      }
+    },
+  },
+  plugins: [],
+}
